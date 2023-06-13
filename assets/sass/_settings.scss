@@ -1,3 +1,36 @@
-body {
-    background: #e0dfdf;
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+  // font-family: $f1, sans-serif;
+
+  a {
+    cursor: pointer;
+  }
+
+  a:visited {
+    color: inherit;
+  }
 }
+
+// COLORS
+
+$c1: #fbfffd;
+$c2: #03140c;
+$c3: #ebbbc9;
+$c4: #d3ddff;
+
+// FONTS
+
+@font-face {
+  font-family: "";
+  src: url("../font/") format("woff2");
+}
+
+// $f1: "", sans-serif;
+// $f2: "", sans-serif;
