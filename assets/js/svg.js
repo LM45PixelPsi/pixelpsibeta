@@ -1,6 +1,6 @@
 const inclSVG = async (...svgContainerIds) => {
   const fetchPromises = svgContainerIds.map((svgContainerId) => {
-    const svgPath = `./assets/svg/${svgContainerId}.svg`;
+    const svgPath = `./assets/visual/svg/${svgContainerId}.svg`;
     return fetch(svgPath)
       .then((response) => response.text())
       .then((svgText) => {
@@ -15,7 +15,7 @@ const inclSVG = async (...svgContainerIds) => {
   await Promise.all(fetchPromises);
 };
 
-// inclSVG("", "");
+inclSVG("logopixelpsi", "loadsquare1", "loadsquare2");
 
 // mettre dans la funct le nom du svg placer dans le dossier (s'assurer que la div à l'id correspondant au nom du svg
 // ex :      <div class="svg-container" id="svgtest4"></div> )

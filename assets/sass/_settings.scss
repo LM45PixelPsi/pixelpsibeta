@@ -1,3 +1,34 @@
+// COLORS
+
+$c1: #fbfffd;
+$c2: #05000d;
+$c3: #ebbbc9;
+$c4: #d3ddff;
+
+// FONTS
+
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-bold-webfont.woff2") format("woff2");
+  font-weight: 900;
+}
+
+$f1: "N27", sans-serif;
+// $f2: "", sans-serif;
+
 * {
   list-style: none;
   margin: 0;
@@ -7,7 +38,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 
-  // font-family: $f1, sans-serif;
+  font-family: $f1, sans-serif;
 
   a {
     cursor: pointer;
@@ -17,20 +48,3 @@
     color: inherit;
   }
 }
-
-// COLORS
-
-$c1: #fbfffd;
-$c2: #03140c;
-$c3: #ebbbc9;
-$c4: #d3ddff;
-
-// FONTS
-
-@font-face {
-  font-family: "";
-  src: url("../font/") format("woff2");
-}
-
-// $f1: "", sans-serif;
-// $f2: "", sans-serif;

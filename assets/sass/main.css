@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "N27";
+  src: url("../visual/font/n27-bold-webfont.woff2") format("woff2");
+  font-weight: 900;
+}
 * {
   list-style: none;
   margin: 0;
@@ -6,6 +22,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "N27", sans-serif, sans-serif;
 }
 * a {
   cursor: pointer;
@@ -14,7 +31,36 @@
   color: inherit;
 }
 
-@font-face {
-  font-family: "";
-  src: url("../font/") format("woff2");
+body {
+  background: #05000d;
+}
+body .prepage-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+body .prepage-container svg {
+  fill: #fbfffd;
+  height: var(--6pr);
+}
+body .prepage-container #loadsquare1,
+body .prepage-container #loadsquare2,
+body .prepage-container #logopixelpsi {
+  position: absolute;
+}
+body .prepage-container #loadsquare1,
+body .prepage-container #loadsquare2 {
+  animation: animate 50s linear infinite;
+}
+@keyframes animate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .prepage-container #loadsquare1 {
+  animation-direction: reverse;
 }/*# sourceMappingURL=main.css.map */
